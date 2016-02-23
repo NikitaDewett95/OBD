@@ -6,7 +6,7 @@ setInterval(function(){
 
 
 
-          var c = [b[3],b[4]].join('');
+          var c = [b[2],b[3]].join('');
        //var d = hexx+c;
           var e = parseInt(c, 16);
         var f = e/4;
@@ -15,6 +15,7 @@ setInterval(function(){
       document.getElementById("rpm").innerHTML = f;
      
     
+    document.getElementById("rpm_command").innerHTML = c;
 
       
       
@@ -51,7 +52,8 @@ var result = (e * 7.718/maf);
       
     
       document.getElementById("fuel").innerHTML = result;
-      
+       document.getElementById("MAFF").innerHTML = localStorage.getItem('MAFF');
+     document.getElementById("Speed").innerHTML = localStorage.getItem('Speed');
       
       
       
@@ -160,7 +162,7 @@ setInterval(function(){
       
 
       
-     
+      document.getElementById("Error_hex").innerHTML = localStorage.getItem('Error');
       
       document.getElementById("error").innerHTML = result;
       
